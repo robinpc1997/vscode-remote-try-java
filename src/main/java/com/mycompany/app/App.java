@@ -7,6 +7,10 @@ package com.mycompany.app;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello Remote World!");
+        // CodeKata: http://codekata.com/kata/kata09-back-to-the-checkout/
+        ShoppingCartService service = new ShoppingCartService();
+        System.out.println(service.getTotalCostOfShoppingCart("AABB").toString());
+        System.out.println(service.getTotalCostOfShoppingCart("AAAABB").toString());
+        System.out.println(service.getTotalCostOfShoppingCart("AAAABCCCCB").toString());
     }
 }
